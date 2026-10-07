@@ -1,7 +1,7 @@
 
 
 
-reg = example_kitchen_combo_registry()
+reg = ReplTree.example_kitchen_combo_registry()
 
 menu = registry_to_menu(reg)
 

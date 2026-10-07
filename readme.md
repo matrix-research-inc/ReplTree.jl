@@ -18,10 +18,10 @@
 
 ## Example Registries
 
-- `example_cat_registry()` – basic callable leaves only.
-- `example_kitchen_registry()` – mix of closures and mutable stove configuration.
-- `example_dishwasher_registry()` – dishwasher controller with queue and cycle management.
-- `example_kitchen_combo_registry()` – kitchen registry with the dishwasher merged under `/appliances/dishwasher`.
+- `ReplTree.example_cat_registry()` – basic callable leaves only.
+- `ReplTree.example_kitchen_registry()` – mix of closures and mutable stove configuration.
+- `ReplTree.example_dishwasher_registry()` – dishwasher controller with queue and cycle management.
+- `ReplTree.example_kitchen_combo_registry()` – kitchen registry with the dishwasher merged under `/appliances/dishwasher`.
 
 ## Running Tests
 
@@ -40,7 +40,7 @@ run from any shell session without affecting global Julia configuration.
 Use `set_branch_callbacks!(menu, "/pointer", callback; include_self=true, recursive=true)` to apply a callback to an existing menu branch and (by default) all descendant branches. For example:
 
 ```julia
-menu = registry_to_menu(example_kitchen_combo_registry())
+menu = registry_to_menu(ReplTree.example_kitchen_combo_registry())
 set_branch_callbacks!(menu, "/appliances/dishwasher") do branch
     branch.pointer  # return the absolute pointer when invoked
 end
