@@ -1,25 +1,24 @@
 module ReplTree
 
-export json_pointer_segments,
-       registry_branches,
-       validate_registry,
-       example_cat_registry,
-       example_kitchen_registry,
-       example_dishwasher_registry,
-       example_kitchen_combo_registry,
-       MenuBranch,
+export MenuBranch,
        registry_to_menu,
        menu_to_registry,
        merge_registry,
        merge_registry!,
-       generate_registry_from_json,
-       view_struct,
-       child_pointer,
-       CallableType,
-       set_menu_branch_callback!,
-       set_branch_callbacks!,
-       rebase_json_pointer
+       set_branch_callbacks!
 
+# Supported API that is not exported; access as `ReplTree.name`.
+public json_pointer_segments,
+       rebase_json_pointer,
+       registry_branches,
+       validate_registry,
+       child_pointer,
+       set_menu_branch_callback!,
+       generate_registry_from_json,
+       example_cat_registry,
+       example_kitchen_registry,
+       example_dishwasher_registry,
+       example_kitchen_combo_registry
 
 include("utilities.jl")
 include("namedtuple_conversions.jl")

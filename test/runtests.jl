@@ -1,5 +1,10 @@
 using Test
 using ReplTree
+using ReplTree: json_pointer_segments, rebase_json_pointer, registry_branches,
+                validate_registry, child_pointer, set_menu_branch_callback!,
+                generate_registry_from_json, example_cat_registry,
+                example_kitchen_registry, example_dishwasher_registry,
+                example_kitchen_combo_registry
 using JSON
 using Base: redirect_stdout
 
