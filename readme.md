@@ -201,3 +201,7 @@ To start a REPL with the package loaded and a sample menu ready (requires [Revis
 ```sh
 ./scripts/start_repl.sh
 ```
+
+## License
+
+MIT. See [LICENSE](LICENSE).
